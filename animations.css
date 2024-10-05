@@ -17,14 +17,35 @@
     }
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #f2994a, 0 0 20px #f2c94c, 0 0 30px #f2994a, 0 0 40px #f2c94c;
+    }
+    100% {
+        text-shadow: 0 0 20px #f2994a, 0 0 30px #f2c94c, 0 0 40px #f2994a, 0 0 50px #f2c94c;
+    }
+}
+
 .header {
     animation: fadeIn 2s ease-in-out;
 }
 
 h2 {
-    animation: slideIn 1.5s ease-in-out;
+    animation: glow 1.5s ease-in-out infinite alternate;
 }
 
-.skill-item, .skills-list ul li {
-    animation: fadeIn 1.5s ease-in both;
+ul li, .skill-item {
+    animation: slideIn 1.5s ease-in-out;
+    animation-delay: 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
