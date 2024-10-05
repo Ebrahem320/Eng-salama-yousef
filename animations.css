@@ -1,4 +1,12 @@
-/* Advanced Animations */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -8,44 +16,10 @@
     }
 }
 
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
+header, .skills, .education, .experience, .certifications {
+    animation: fadeIn 1s ease-in;
 }
 
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes glow {
-    0% {
-        text-shadow: 0 0 10px #4caf50, 0 0 20px #8bc34a, 0 0 30px #4caf50, 0 0 40px #8bc34a;
-    }
-    100% {
-        text-shadow: 0 0 20px #4caf50, 0 0 30px #8bc34a, 0 0 40px #4caf50, 0 0 50px #8bc34a;
-    }
-}
-
-.header {
-    animation: fadeIn 2s ease-in-out;
-}
-
-h2 {
-    animation: glow 1.5s ease-in-out infinite alternate;
-}
-
-ul li, .skill-item, .experience-card {
-    animation: slideIn 1.5s ease-in-out;
-    animation-delay: 0.5s;
-    opacity: 0;
-    animation-fill-mode: forwards;
+h1, h2 {
+    animation: fadeIn 1s ease-in;
 }
