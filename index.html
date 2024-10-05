@@ -1,104 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eng. Salama Shahat CV</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animations.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>CV - Eng. Salama Shahat Mahmoud Yousef</title>
 </head>
-
 <body>
-    <header class="header">
+    <header>
         <div class="container">
-            <div class="logo">
-                <img src="electricity_logo.png" alt="Electricity Logo">
-            </div>
-            <h1>Eng. Salama Shahat Mahmoud Yousef <span class="emoji">⚡</span></h1>
-            <p>Head & Technical Manager of Electrical Testing Laboratories</p>
-            <p>Egyptian Organization for Standardization & Quality (EOS)</p>
-            <p>📞 +20 (0) 1110592466 | <a href="mailto:yousef_eos@yahoo.com">yousef_eos@yahoo.com</a></p>
-            <img src="your_image.jpg" alt="Your Image" class="profile-img">
+            <h1>Eng. Salama Shahat Mahmoud Yousef ⚡</h1>
+            <img src="your-image.jpg" alt="Salama Yousef" class="profile-image">
+            <p class="contact-info">Email: <a href="mailto:yousef_eos@yahoo.com">yousef_eos@yahoo.com</a> | Phone: <a href="tel:+201110592466">+20 (0) 1110592466</a></p>
+            <p>Date of Birth: 25/09/1974 | Nationality: Egyptian</p>
         </div>
     </header>
-
-    <section class="career-summary">
+    
+    <nav>
         <div class="container">
-            <h2>Career Summary</h2>
-            <p>Electrical engineer with over 23 years of experience in electrical testing, management of laboratories, quality systems, and energy management. Proven track record in leading teams, implementing energy-saving strategies, and managing electrical testing standards.</p>
-        </div>
-    </section>
-
-    <section class="experience">
-        <div class="container">
-            <h2>Experience</h2>
-            <div class="experience-card">
-                <strong>Head of Department Electrical Testing Laboratories</strong> (Sep 2012 - Present)
-                <p>Responsible for leading and managing electrical testing, quality system assessments, and energy management systems.</p>
-            </div>
-            <div class="experience-card">
-                <strong>Technical Manager of Electrical Testing Laboratories</strong> (Jan 2009 - Present)
-                <p>Led the technical evaluation and testing of electrical products in compliance with international standards (ES, IEC, ISO).</p>
-            </div>
-            <!-- Add more experience items here -->
-        </div>
-    </section>
-
-    <section class="education">
-        <div class="container">
-            <h2>Education</h2>
             <ul>
-                <li><strong>Bachelor's Degree in Electrical Power Engineering Science</strong>, Faculty of Engineering, EL-Menofiya University (May 2001)</li>
-                <li><strong>Diploma in Energy Management</strong>, Tabbin Institute for Metallurgical Studies (2014)</li>
-                <li><strong>Certified Energy Management Professional</strong>, RCREEE (2019)</li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
             </ul>
         </div>
-    </section>
-
-    <section class="skills">
+    </nav>
+    
+    <main>
         <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-list">
-                <div class="skill-item">
-                    <h3>Technical Skills <span class="emoji">🔧</span></h3>
-                    <ul>
-                        <li>Electrical product testing & measurement</li>
-                        <li>Quality system assessment (ISO standards)</li>
-                        <li>Lab accreditation system setup</li>
-                    </ul>
+            <section id="skills" class="skills">
+                <h2>Skill Highlights</h2>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Office Program Skills</h3>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-desktop"></i>
+                        <h3>Computer Skills</h3>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Photoshop</h3>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-comments"></i>
+                        <h3>Communication Skills</h3>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Problem Solving Skills</h3>
+                    </div>
                 </div>
-                <div class="skill-item">
-                    <h3>Office Skills <span class="emoji">🖥️</span></h3>
-                    <ul>
-                        <li>Office programs (Word, Excel)</li>
-                        <li>Photoshop</li>
-                        <li>Communication & Decision-making skills</li>
-                    </ul>
-                </div>
-            </div>
+            </section>
+            <section id="education" class="education">
+                <h2>Education 🎓</h2>
+                <p>Bachelor's degree in Electrical Power Engineering from Faculty of Engineering EL-Menofiya University (May 2001)</p>
+                <p>Diploma in Energy Management from Tabbin Institute (2014)</p>
+                <p>Certified Energy Management Professional from RCREEE (No: 19112 - 2019)</p>
+            </section>
+            <section id="experience" class="experience">
+                <h2>Experience 🔧</h2>
+                <ul>
+                    <li>Technical Manager of Electrical Testing Laboratories at Egyptian Organization For Standardization & Quality</li>
+                    <li>Instructor in EOS Training Center (2005 - Present)</li>
+                    <li>Lead Auditor ISO 50001 Energy Management Systems (2014 - Present)</li>
+                </ul>
+            </section>
+            <section id="certifications" class="certifications">
+                <h2>Certifications 🏆</h2>
+                <ul>
+                    <li>ISO 50001 Energy Management Systems</li>
+                    <li>ISO 9001:2008 Quality Management Systems</li>
+                </ul>
+            </section>
         </div>
-    </section>
-
-    <section class="hobbies">
+    </main>
+    
+    <footer>
         <div class="container">
-            <h2>Hobbies & Interests</h2>
-            <ul>
-                <li>Reading & Writing</li>
-                <li>Technology & Innovations</li>
-                <li>Swimming & Traveling</li>
-            </ul>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Eng. Salama Shahat. All Rights Reserved.</p>
+            <p>&copy; 2024 Eng. Salama Shahat Mahmoud Yousef</p>
+            <p>Follow me: 
+                <a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/your-profile" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/your-profile" target="_blank"><i class="fab fa-twitter"></i></a>
+            </p>
         </div>
     </footer>
 </body>
-
 </html>
