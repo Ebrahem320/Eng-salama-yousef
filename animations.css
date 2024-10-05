@@ -1,4 +1,4 @@
-/* Animations for Enhanced Interaction */
+/* Advanced Animations for Enhanced Interaction */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -10,10 +10,12 @@
 
 @keyframes slideIn {
     from {
-        transform: translateX(-100%);
+        transform: translateY(-50%);
+        opacity: 0;
     }
     to {
-        transform: translateX(0);
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
@@ -26,12 +28,15 @@
     }
 }
 
-@keyframes glow {
+@keyframes pulse {
     0% {
-        text-shadow: 0 0 10px #f2994a, 0 0 20px #f2c94c, 0 0 30px #f2994a, 0 0 40px #f2c94c;
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
     }
     100% {
-        text-shadow: 0 0 20px #f2994a, 0 0 30px #f2c94c, 0 0 40px #f2994a, 0 0 50px #f2c94c;
+        transform: scale(1);
     }
 }
 
@@ -40,12 +45,11 @@
 }
 
 h2 {
-    animation: glow 1.5s ease-in-out infinite alternate;
+    animation: slideIn 1s ease-in-out;
 }
 
 ul li, .skill-item {
     animation: slideIn 1.5s ease-in-out;
-    animation-delay: 0.5s;
     opacity: 0;
     animation-fill-mode: forwards;
 }
