@@ -1,25 +1,8 @@
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-}
-
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-header, .skills, .education, .experience, .certifications {
-    animation: fadeIn 1s ease-in;
-}
-
-h1, h2 {
+body {
     animation: fadeIn 1s ease-in;
 }
