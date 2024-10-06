@@ -1,16 +1,21 @@
-$(document).ready(function () {
-    AOS.init();
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+    const options = {
+        root: null,
+        threshold: 0.1,
+        rootMargin: "0px"
+    };
 
-    // Smooth scrolling for all links
-    $('a.nav-link').click(function (event) {
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top
-        }, 800);
-    });
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, options);
 
-    // Add some interactive hover effects
-    $('.education-item').hover(function () {
-        $(this).toggleClass('shadow-lg p-3 mb-5 bg-body rounded');
+    sections.forEach(section => {
+        observer.observe(section);
+        section.classList.add('section');
     });
 });
