@@ -1,28 +1,12 @@
-/* animations.css */
-.hero-section {
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.header-content {
     animation: fadeIn 2s ease-in-out;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.section-title {
-    animation: slideIn 1.5s ease;
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(-20px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.section {
+    animation: fadeIn 1.5s ease-in-out;
 }
