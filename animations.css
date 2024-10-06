@@ -1,4 +1,8 @@
-/* Animations for Enhanced Interaction */
+/* animations.css */
+.hero-section {
+    animation: fadeIn 2s ease-in-out;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -8,36 +12,17 @@
     }
 }
 
+.section-title {
+    animation: slideIn 1.5s ease;
+}
+
 @keyframes slideIn {
     from {
-        transform: translateX(-100%);
+        transform: translateY(-20px);
+        opacity: 0;
     }
     to {
-        transform: translateX(0);
+        transform: translateY(0);
+        opacity: 1;
     }
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes glow {
-    0% {
-        text-shadow: 0 0 10px #f2994a, 0 0 20px #f2c94c, 0 0 30px #f2994a, 0 0 40px #f2c94c;
-    }
-    100% {
-        text-shadow: 0 0 20px #f2994a, 0 0 30px #f2c94c, 0 0 40px #f2994a, 0 0 50px #f2c94c;
-    }
-}
-
-ul li, .skill-item {
-    animation: slideIn 1.5s ease-in-out;
-    animation-delay: 0.5s;
-    opacity: 0;
-    animation-fill-mode: forwards;
 }
